@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoMotos.Registro"
+             Title="Registro">
+    <VerticalStackLayout>
+        <Label 
+            Text="Registra un usuario"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            FontSize="Large"/>
+
+        <!-- Campo de usuario -->
+        <Entry x:Name="usernameEntry"
+               Placeholder="Usuario"
+               Keyboard="Text"
+               Margin="0,20,0,0"/>
+
+        <!-- Campo de contraseña -->
+        <Entry x:Name="passwordEntry"
+               Placeholder="Contraseña"
+               IsPassword="True"
+               Keyboard="Text" />
+
+        <Button Clicked="OnRegisteredClicked"
+                BackgroundColor="LightBlue"
+                Text="Registrar"
+                HorizontalOptions="Center"/>
+
+    </VerticalStackLayout>
+</ContentPage>
+    

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoMotos.Inicio"
+             Title="Inicio">
+    <VerticalStackLayout>
+        <Label 
+            Text="¿Que deseas hacer?"
+            FontSize="Header"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Button x:Name="OpSesionBTN"
+                Clicked="OnOpSesionClicked"
+                Text="Inicar sesion"
+                HorizontalOptions="Center"
+                BackgroundColor="Pink"/>
+
+        <Button x:Name="OpRegistroBTN"
+                Text="Registrar usuario"
+                Clicked="OnOpRegistrarClicked"
+                HorizontalOptions="Center"
+                BackgroundColor="Blue"/>
+        
+    </VerticalStackLayout>
+</ContentPage>
+    
